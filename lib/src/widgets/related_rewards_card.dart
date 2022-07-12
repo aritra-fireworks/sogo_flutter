@@ -1,0 +1,94 @@
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:sogo_flutter/src/constants/app_colors.dart';
+import 'package:sogo_flutter/src/models/malls_and_merchants/merchant_details_model.dart';
+
+class RelatedRewardsCard extends StatefulWidget {
+  final RelatedReward reward;
+  const RelatedRewardsCard({Key? key, required this.reward}) : super(key: key);
+
+  @override
+  State<RelatedRewardsCard> createState() => _RelatedRewardsCardState();
+}
+
+class _RelatedRewardsCardState extends State<RelatedRewardsCard> {
+
+  bool imageFailed = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 100.sp,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(
+            width: 100.sp,
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(13),
+                image: imageFailed ? const DecorationImage(image: AssetImage("assets/images/pic_placeholder.png"), fit: BoxFit.contain) : DecorationImage(
+                    image: CachedNetworkImageProvider(
+                      widget.reward.img??"",
+                      errorListener: () => setState(() => imageFailed = true),
+                    ),
+                    fit: BoxFit.contain
+                ),
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Padding(
+              padding: EdgeInsets.all(10.sp),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      widget.reward.label != null && widget.reward.label!.isNotEmpty ? Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(5),
+                          color: AppColors.primaryRed.withOpacity(0.11),
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 4.h),
+                        child: Text(widget.reward.label??"", style: TextStyle(fontFamily: "GothamBold", fontSize: 7.sp, color: AppColors.primaryRed.withOpacity(0.4)),),
+                      ) : const SizedBox(),
+                      const SizedBox(),
+                      // Text("Until ${widget.reward.date}", style: TextStyle(fontFamily: "GothamRegular", fontSize: 7.sp, color: AppColors.lightBlack.withOpacity(0.4)),),
+                    ],
+                  ),
+                  SizedBox(height: 6.sp,),
+                  Text(widget.reward.name??"", maxLines: 2, overflow: TextOverflow.ellipsis, style: TextStyle(fontFamily: "GothamMedium", fontSize: 15.sp, color: Colors.black),),
+                  const Spacer(),
+                  Row(
+                    children: [
+                      RichText(text: TextSpan(
+                        children: [
+                          TextSpan(text: "${widget.reward.point}", style: TextStyle(fontFamily: "GothamMedium", fontSize: 12.sp, color: AppColors.primaryRed),),
+                          TextSpan(text: num.tryParse(widget.reward.point?.replaceAll(",", "")??"") != null ? " Pts" : "", style: TextStyle(fontFamily: "GothamMedium", fontSize: 12.sp, color: Colors.black),),
+                        ],
+                      )),
+                      const Spacer(),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(3),
+                          color: const Color(0xFF559E62),
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 4.h),
+                        child: Text("In-Store", style: TextStyle(fontFamily: "GothamMedium", fontSize: 11.sp, color: Colors.white),),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}

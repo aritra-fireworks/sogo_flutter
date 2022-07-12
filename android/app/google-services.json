@@ -1,0 +1,187 @@
+{
+  "project_info": {
+    "project_number": "380297325391",
+    "firebase_url": "https://sogo-4080d.firebaseio.com",
+    "project_id": "sogo-4080d",
+    "storage_bucket": "sogo-4080d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380297325391:android:a3a74720c1324566edf33a",
+        "android_client_info": {
+          "package_name": "com.incredibleqr.mysogo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380297325391-ipq1jopsmbr8a1fb830va1ffgckeul7t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.incredibleqr.mysogo",
+            "certificate_hash": "f328a7d68b9d92549f9976a5de1e55cefd8aee10"
+          }
+        },
+        {
+          "client_id": "380297325391-47fk0fa5ilqkpmut6t57ps8g7s2toc0e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0cSLYD6ecbkWFlyTy4SU9Qja3JUT-jrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380297325391-47fk0fa5ilqkpmut6t57ps8g7s2toc0e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "380297325391-60b9bjifbbgehhamnl740aubdcbovjt1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.incredibleqr.mysogo"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380297325391:android:bfe54724a8330277edf33a",
+        "android_client_info": {
+          "package_name": "com.incredibleqr.mysogo.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380297325391-47fk0fa5ilqkpmut6t57ps8g7s2toc0e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0cSLYD6ecbkWFlyTy4SU9Qja3JUT-jrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380297325391-47fk0fa5ilqkpmut6t57ps8g7s2toc0e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "380297325391-60b9bjifbbgehhamnl740aubdcbovjt1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.incredibleqr.mysogo"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380297325391:android:da11dd76c1ed2830edf33a",
+        "android_client_info": {
+          "package_name": "my.fireworks.sogo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380297325391-9c3vqa1vhpp06vef6jrka9j8ipaja2as.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "my.fireworks.sogo",
+            "certificate_hash": "350099ebb14f2d86f49bf70656ee1e6848bbb833"
+          }
+        },
+        {
+          "client_id": "380297325391-9l33rkm61kjfg41ahf1kr1u7u7uaq0dh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "my.fireworks.sogo",
+            "certificate_hash": "c5e1ead363509dce61f52aa46b6fac29f71e15d4"
+          }
+        },
+        {
+          "client_id": "380297325391-tq3c5hfn7217604dl8gms6hfi0u9j8ts.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "my.fireworks.sogo",
+            "certificate_hash": "584d75fca07fbffff37b702701c3023aa6195c40"
+          }
+        },
+        {
+          "client_id": "380297325391-47fk0fa5ilqkpmut6t57ps8g7s2toc0e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0cSLYD6ecbkWFlyTy4SU9Qja3JUT-jrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380297325391-47fk0fa5ilqkpmut6t57ps8g7s2toc0e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "380297325391-60b9bjifbbgehhamnl740aubdcbovjt1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.incredibleqr.mysogo"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380297325391:android:ce8d81d74366bb24edf33a",
+        "android_client_info": {
+          "package_name": "my.fireworks.sogo.merchant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380297325391-47fk0fa5ilqkpmut6t57ps8g7s2toc0e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0cSLYD6ecbkWFlyTy4SU9Qja3JUT-jrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380297325391-47fk0fa5ilqkpmut6t57ps8g7s2toc0e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "380297325391-60b9bjifbbgehhamnl740aubdcbovjt1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.incredibleqr.mysogo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

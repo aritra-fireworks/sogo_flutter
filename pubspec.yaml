@@ -1,0 +1,98 @@
+name: sogo_flutter
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  fluttertoast:
+  flutter_screenutil:
+  modal_progress_hud_nsn:
+  flutter_offline:
+  carousel_slider:
+  rxdart:
+  http:
+  intl:
+  cached_network_image:
+  loading_indicator:
+  shared_preferences:
+  flutter_native_splash:
+  intl_phone_number_input:
+  pin_code_fields:
+  stop_watch_timer:
+  firebase_core: ^1.17.0
+  firebase_messaging: ^11.4.0
+  flutter_local_notifications: ^9.4.0
+  device_info_plus: ^3.2.3
+  convert:
+  barcode: ^2.2.1
+  flutter_svg: ^1.0.3
+  flutter_widget_from_html_core: ^0.8.5+3
+  webview_flutter:
+  syncfusion_flutter_sliders: ^20.1.59
+  equatable: ^2.0.3
+  share_plus: ^4.0.8
+  flutter_switch: ^0.3.2
+  package_info_plus:
+  debounce_throttle:
+  textfield_search: ^0.10.0
+  confetti: ^0.6.0
+  url_launcher: ^6.1.4
+  image_picker:
+  image_cropper:
+  add_2_calendar: ^2.1.3
+  google_sign_in: ^5.3.3
+  flutter_facebook_auth: ^4.4.0
+  sign_in_with_apple: ^4.0.0
+
+dependency_overrides:
+  image_picker_android: 0.8.5+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/sogo_long_red.png"
+
+flutter_native_splash:
+  color: "#e42268"
+  android_12:
+  image: assets/images/sogo_long_red.png
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: GothamBold
+      fonts:
+        - asset: assets/fonts/GothamBold.otf
+    - family: MyriadRegular
+      fonts:
+        - asset: assets/fonts/MyriadProRegular.ttf
+    - family: GothamRegular
+      fonts:
+        - asset: assets/fonts/GothamRegular.otf
+    - family: GothamBook
+      fonts:
+        - asset: assets/fonts/GothamBook.otf
+    - family: GothamMedium
+      fonts:
+        - asset: assets/fonts/GothamMedium.otf
