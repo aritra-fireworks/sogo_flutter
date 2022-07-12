@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>380297325391-hugv0gv596ourk2i38r90jg3upvv34ol.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.380297325391-hugv0gv596ourk2i38r90jg3upvv34ol</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>380297325391-9c3vqa1vhpp06vef6jrka9j8ipaja2as.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCAQG9jNt3siMWo1OyQrhXSfn20gl5FuI8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>380297325391</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>my.fireworks.sogo</string>
+	<key>PROJECT_ID</key>
+	<string>sogo-4080d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sogo-4080d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:380297325391:ios:a3498db94bc73c86edf33a</string>
+	<key>DATABASE_URL</key>
+	<string>https://sogo-4080d.firebaseio.com</string>
+</dict>
+</plist>

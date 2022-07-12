@@ -141,7 +141,7 @@ class _LoginViewState extends State<LoginView> {
                       loginOptions(imagePath: "assets/images/ic_facebook.png", onTap: () => facebookLogin(context)),
                       loginOptions(imagePath: "assets/images/ic_google.png", onTap: () => googleLogin(context)),
                       if(Platform.isIOS)
-                        loginOptions(imagePath: "assets/images/ic_apple.png", onTap: (){}),
+                        loginOptions(imagePath: "assets/images/ic_apple.png", onTap: () => appleLogin(context)),
                     ],
                   ),
                   SizedBox(height: 10.h,),
@@ -225,6 +225,24 @@ class _LoginViewState extends State<LoginView> {
       isLoading = true;
     });
     await socialAuthManager.facebookSignIn(newSignIn: true).then((value) {
+      if(value?.status == "success"){
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const NavBarView(),));
+      } else if(value?.message?.contains("not registered") ?? false){
+        Navigator.push(context, MaterialPageRoute(builder: (context) => const CreateNewAccountView(isSocialSignUp: true),));
+      } else {
+        AppUtils.showMessage(context: context, title: "Error!", message: value?.message??"Error logging in. Try again.");
+      }
+    });
+    setState(() {
+      isLoading = false;
+    });
+  }
+
+  void appleLogin(BuildContext context) async {
+    setState(() {
+      isLoading = true;
+    });
+    await socialAuthManager.signInWithApple().then((value) {
       if(value?.status == "success"){
         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const NavBarView(),));
       } else if(value?.message?.contains("not registered") ?? false){
